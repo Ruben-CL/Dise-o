@@ -1,0 +1,292 @@
+body {
+    background-color: #9de3f8;
+}
+@font-face {
+    font-family: "Festive";
+    src: url("../Fuente/Festive-Regular.ttf") format("opentype"),
+         url("../Fuente/Festive-Regular.ttf") format("truetype");
+}
+h1 {
+    text-align: center;
+    font-family: 'Festive';
+    font-size: 80px;
+    
+}
+figcaption {
+    margin-top: 10px;
+    font-size: 13px;
+}
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #0cec2a;
+    font-family: Arial, sans-serif;
+}
+address {
+    width: 300px;
+    float: left;
+    font-size: 12px;
+}
+footer > p {
+    text-align: right;
+    font-size: 12px;
+}
+#menu {
+    margin-left: 20px;
+    width:500px;
+    font-family: Optima, sans-serif;
+}
+ul {
+    list-style:none;
+}
+.Indice {
+    float:left
+}
+.Indice li a {
+    background-color:#08f57e;
+    color:#000000;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+.Indice li a:hover {
+    background-color:#0aa167;
+}
+.Indice li ul {
+    display:none;
+    position:absolute;
+    min-width: 80px;
+}
+.Indice li:hover > ul {
+    display:block;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    flex-direction: row;
+    font-family: Didot, serif;
+    padding: 15px;
+    margin-top: 20px;
+}
+.flexbox > div {
+    width: 200px;
+    margin: 10px;
+    text-align: justify;
+    padding: 7px;
+    font-size: 14px;
+}
+.flexbox > div > .titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+.ley1 {
+    background-color: rgb(14, 238, 77);
+}
+.ley2 {
+    background-color: rgb(46, 145, 67);
+}
+.ley3 {
+    background-color: rgb(101, 201, 136);
+}
+.ley4 {
+    background-color: rgb(10, 236, 55);
+}
+.ley5 {
+    background-color: rgb(179, 168, 147)
+}
+.ley6 {
+    background-color: rgb(219, 215, 192);
+}
+.ley7 {
+    background-color: rgb(84, 85, 78);
+}
+.ver {
+    font-size: 11px;
+}
+.leyes {
+   
+    font-family: Verdana, sans-serif;
+    padding: 5px;
+    margin-top: 40px;
+}
+.leyes > div {
+    margin: 20px;
+    text-align: justify;
+    padding: 7px;
+    font-size: 14px;
+}
+#ampliado1 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: start;
+    align-content: stretch;
+   
+}
+#ampliado1 > div {
+    padding: 10px;
+    width: 700px;
+    float: left;
+}
+#ampliado1 > div > .titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+#ampliado1 > div > .texto {
+    margin: 10px;
+    text-align: justify;
+    padding: 7px;
+    font-size: 17px;
+}
+#ampliado2 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: start;
+    align-content: stretch;
+   
+}
+#ampliado2 > div {
+    padding: 10px;
+    width: 700px;
+    float: left;
+}
+#ampliado2 > div > .titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+#ampliado2 > div > .texto {
+    margin: 10px;
+    text-align: justify;
+    padding: 7px;
+    font-size: 17px;
+}
+#ampliado3 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: start;
+    align-content: stretch;
+   
+}
+#ampliado3 > div {
+    padding: 10px;
+    width: 700px;
+    float: left;
+}
+#ampliado3 > div > .titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+#ampliado3 > div > .texto {
+    margin: 10px;
+    text-align: justify;
+    padding: 7px;
+    font-size: 17px;
+}
+#ampliado4 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: start;
+    align-content: stretch;
+   
+}
+#ampliado4 > div {
+    padding: 10px;
+    width: 700px;
+    float: left;
+}
+#ampliado4 > div > .titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+#ampliado4 > div > .texto {
+    margin: 10px;
+    text-align: justify;
+    padding: 7px;
+    font-size: 17px;
+}
+#ampliado5 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: start;
+    align-content: stretch;
+   
+}
+#ampliado5 > div {
+    padding: 10px;
+    width: 700px;
+    float: left;
+}
+#ampliado5 > div > .titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+#ampliado5 > div > .texto {
+    margin: 10px;
+    text-align: justify;
+    padding: 7px;
+    font-size: 17px;
+}
+#ampliado6 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: start;
+    align-content: stretch;
+   
+}
+#ampliado6 > div {
+    padding: 10px;
+    width: 700px;
+    float: left;
+}
+#ampliado6 > div > .titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+#ampliado6 > div > .texto {
+    margin: 10px;
+    text-align: justify;
+    padding: 7px;
+    font-size: 17px;
+}
+#ampliado7 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: start;
+    align-content: stretch;
+   
+}
+#ampliado7 > div {
+    padding: 10px;
+    width: 700px;
+    float: left;
+}
+#ampliado7 > div > .titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+#ampliado7 > div > .texto {
+    margin: 10px;
+    text-align: justify;
+    padding: 7px;
+    font-size: 17px;
+}
+img {
+    width:100%;
+max-width:400px;
+}

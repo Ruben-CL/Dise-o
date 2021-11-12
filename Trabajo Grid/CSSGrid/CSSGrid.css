@@ -1,0 +1,157 @@
+@media all and (min-width: 320px) {
+    .item1 { grid-area: header; }
+    .grid-main { grid-area: main; }
+    .item3 { grid-area: footer; }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+          'header header header header header header'
+          'main main main main main main'
+          'footer footer footer footer footer footer';
+        grid-gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+        border: 1px solid;
+        margin: 10px;
+      }
+      
+    .item4 { grid-area: cabeceramain; }
+    .item5 { grid-area: articulo1; }
+    .item6 { grid-area: articulo2; }
+    .item7 { grid-area: aside; }
+
+.grid-main {
+  display: grid;
+  grid-template-areas:
+    'cabeceramain cabeceramain cabeceramain cabeceramain cabeceramain cabeceramain'
+    'articulo1 articulo1 articulo1 articulo1 articulo1 articulo1'
+    'articulo2 articulo2 articulo2 articulo2 articulo2 articulo2'
+    'aside aside aside aside aside aside';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-main > div{
+  background-color: darkmagenta;
+}
+.grid-main > article{
+  background-color:darkseagreen;
+}
+.grid-main > aside{
+  background-color:firebrick;
+}
+
+   }
+
+   @media all and (min-width: 768px) {
+    .item1 { grid-area: header; }
+    .grid-main { grid-area: main; }
+    .item3 { grid-area: footer; }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+          'header header header header header header'
+          'main main main main main main'
+          'footer footer footer footer footer footer';
+        grid-gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+        border: 1px solid;
+        margin: 10px;
+      }
+      
+      
+    .item4 { grid-area: cabeceramain; }
+.item5 { grid-area: articulo1; }
+.item6 { grid-area: articulo2; }
+.item7 { grid-area: aside; }
+
+.grid-main {
+  display: grid;
+  grid-template-areas:
+    'aside cabeceramain cabeceramain cabeceramain cabeceramain cabeceramain'
+    'aside articulo1 articulo1 articulo1 articulo1 articulo1'
+    'aside articulo1 articulo1 articulo1 articulo1 articulo1'
+    'aside articulo2 articulo2 articulo2 articulo2 articulo2';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  border: 1px solid;
+  margin: 10px;
+}
+.grid-main > div{
+  background-color: darkmagenta;
+}
+.grid-main > article{
+  background-color:darkseagreen;
+}
+.grid-main > aside{
+  background-color:firebrick;
+}
+
+   }
+   @media all and (min-width: 1024px) {
+    .item1 { grid-area: header; }
+    .grid-main { grid-area: main; }
+    .item3 { grid-area: footer; }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+          'header header header header header header'
+          'main main main main main main'
+          'footer footer footer footer footer footer';
+        grid-gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+        border: 1px solid;
+        margin: 10px;
+      }
+      
+     
+      .item4 { grid-area: cabeceramain; }
+      .item5 { grid-area: articulo1; }
+      .item6 { grid-area: articulo2; }
+      .item7 { grid-area: aside; }
+      
+    .grid-main {
+      display: grid;
+      grid-template-areas:
+        'aside cabeceramain cabeceramain cabeceramain cabeceramain cabeceramain'
+        'aside articulo1 articulo1 articulo2 articulo2 articulo2'
+        'aside articulo1 articulo1 articulo2 articulo2 articulo2'
+        'aside articulo1 articulo1 articulo2 articulo2 articulo2';
+      grid-gap: 10px;
+      background-color: #00ff00;
+      padding: 10px;
+      border: 1px solid;
+      margin: 10px;
+      
+    }
+    .grid-main > div{
+      background-color: darkmagenta;
+    }
+    .grid-main > article{
+      background-color:darkseagreen;
+    }
+    .grid-main > aside{
+      background-color:firebrick;
+    }
+   }
+   h3{
+     text-align: center;
+   }
+   header{
+    padding: 10px;
+    border: 1px solid;
+    margin: 10px;
+    background-color: chocolate;
+   }
+   footer{
+    padding: 10px;
+    border: 1px solid;
+    margin: 10px;
+    background-color: darkgray;
+   }
