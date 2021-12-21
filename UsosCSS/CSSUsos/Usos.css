@@ -1,0 +1,296 @@
+h1{
+    text-align: center;
+    color: white;
+}
+#menu {
+    margin-left: 20px;
+    width:500px;
+    font-family: Optima, sans-serif;
+}
+ul {
+    list-style:none;
+}
+.indice {
+    float:left
+}
+.indice li a {
+    background-color:#08f57e;
+    color:#000000;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+    transition: width 2s;
+}
+.indice li a:hover {
+    background-color:#0aa167;
+    transform: rotate(20deg);
+    width: 300px;
+}
+.indice li ul {
+    display:none;
+    position:absolute;
+    min-width: 80px;
+}
+.indice li:hover > ul {
+    display:block;
+}
+.indice {
+    float:left
+}
+.indice li a {
+    background-color:#08f57e;
+    color:#000000;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+.indice li a:hover {
+    background-color:#0aa167;
+}
+.indice li ul {
+    display:none;
+    position:absolute;
+    min-width: 80px;
+}
+.indice li:hover > ul {
+    display:block;
+}
+.propiedades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    flex-direction: row;
+    font-family: Verdana, sans-serif;
+    padding: 5px;
+    margin-top: 40px;
+}
+.propiedades > div {
+    margin: 20px;
+    text-align: justify;
+    padding: 7px;
+    font-size: 14px;
+}
+.propiedades > div > .titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+#rcorners1 {
+    border-radius: 25px;
+    background: #73AD21;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: start;
+    align-content: stretch;
+   
+  }
+        
+#rcorners1 > div {
+    padding: 10px;
+    width: 700px;
+    float: left;
+}
+#rcorners1 > div > .titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+#rcorners1 > div > .texto {
+    margin: 10px;
+    text-align: justify;
+    padding: 7px;
+    font-size: 17px;
+}
+#borderimg {
+    border-image-source:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 17 17'%3E%3Cpath d='M4.5,4.5A4,4 0 0 1 12.5,4.5A4,4 0 0 1 12.5,12.5A4,4 0 0 1 4.5,12.5A4,4 0 0 1 4.5,4.5z' stroke='skyBlue' fill='Azure' /%3E%3C/svg%3E");
+    border-image-slice: 4.5 fill;
+    border-image-repeat: round;
+    border-image-width: 17px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: start;
+    align-content: stretch;
+   
+  }
+
+#borderimg > div {
+    padding: 10px;
+    width: 700px;
+    float: left;
+}
+#borderimg > div > .titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+#borderimg > div > .texto {
+    margin: 10px;
+    text-align: justify;
+    padding: 7px;
+    font-size: 17px;
+}
+#fondo {
+    background-image: url("../arena.jpg");
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: start;
+    align-content: stretch;
+   
+}
+#fondo > div {
+    padding: 10px;
+    width: 700px;
+    float: left;
+}
+#fondo > div > .titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+#fondo > div > .texto {
+    margin: 10px;
+    text-align: justify;
+    padding: 7px;
+    font-size: 17px;
+}
+#degradado {
+    background-image: linear-gradient(red, yellow);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: start;
+    align-content: stretch;
+}
+#degradado > div {
+    padding: 10px;
+    width: 700px;
+    float: left;
+}
+#degradado > div > .titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+#degradado > div > .texto {
+    margin: 10px;
+    text-align: justify;
+    padding: 7px;
+    font-size: 17px;
+}
+#sombra {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: start;
+    align-content: stretch;
+    box-shadow: 2px 2px;
+    transition: 1s;
+}
+#sombra:hover {
+    transform: rotate(5deg);
+}
+
+#sombra > div {
+    padding: 10px;
+    width: 700px;
+    float: left;
+}
+#sombra > div > .titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 2px 2px;
+}
+#sombra > div > .texto {
+    margin: 10px;
+    text-align: justify;
+    padding: 7px;
+    font-size: 17px;
+}
+#efectos {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: start;
+    align-content: stretch;
+    transition: 3s;
+}
+#efectos:hover {
+    transform: rotateY(180deg);
+}
+#efectos > div {
+    padding: 10px;
+    width: 700px;
+    float: left;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+}
+@keyframes example {
+    from {background-color: rgb(219, 215, 192);}
+    to {background-color: green;}
+}
+#efectos > div > .titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+   
+}
+#efectos > div > .texto {
+    margin: 10px;
+    text-align: justify;
+    padding: 7px;
+    font-size: 17px;
+    word-break: keep-all;
+}
+
+.propiedad1 {
+    background-color: rgb(14, 238, 77);
+}
+.propiedad2 {
+    background-color: rgb(46, 145, 67);
+}
+.propiedad3 {
+    background-color: rgb(101, 201, 136);
+}
+.propiedad4 {
+    background-color: rgb(10, 236, 55);
+}
+.propiedad5 {
+    background-color: rgb(179, 168, 147)
+}
+.propiedad6 {
+    background-color: rgb(219, 215, 192);
+}
+ body{
+     background-image: url("../arbol.jpg");
+ }
+ .pagination {
+    display: inline-block;background-color: #4CAF50;
+    opacity: 70%;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+  .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+  :target{
+    background-color: orange;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px; 
+  }
+  

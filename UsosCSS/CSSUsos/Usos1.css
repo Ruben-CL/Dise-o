@@ -1,0 +1,229 @@
+#menu1 {
+    margin-left: 20px;
+    width:500px;
+    font-family: Optima, sans-serif;
+}
+ul {
+    list-style:none;
+}
+.indice1 {
+    float:left
+}
+.indice1 li a {
+    background-color:#08f57e;
+    color:#000000;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+.indice1 li a:hover {
+    background-color:#0aa167;
+}
+.indice1 li ul {
+    display:none;
+    position:absolute;
+    min-width: 80px;
+}
+.indice1 li:hover > ul {
+    display:block;
+}
+
+.indice1 li a:focus {
+   
+    display: block;
+    background-color: orange;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+.tooltiptitulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    column-count: 3;
+    column-gap: 40px;
+    padding: 10px;
+    width: 700px;
+    float: left;
+    background-color: aquamarine;
+    resize: both;
+    overflow: auto;
+  }
+  
+  .tooltiptitulo .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltiptitulo:hover .tooltiptext {
+    visibility: visible;
+  }
+  .button {
+    background-color: #4CAF50;
+    color: #000000;
+    border: none;
+    padding:10px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 20px;
+    width:150px;
+    font-family: Optima, sans-serif;
+    cursor: pointer;
+    float: right;
+  }
+   
+s{
+    color:red;
+    font-size: 0.75 rem;
+}
+#clase{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: start;
+    align-content: stretch;
+}
+#clase > div {
+    padding: 10px;
+    width: 700px;
+    float: left;
+}
+#clase > div > .titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+ 
+#clase > div > .texto {
+    margin: 10px;
+    text-align: justify;
+    padding: 7px;
+    font-size: 17px;
+   
+}
+.lorem {
+    background-color: rgb(46, 145, 67);
+    border-color: green;
+    box-shadow: 2px 2px;
+}
+#iris {
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: start;
+    align-content: stretch;
+   
+}
+#iris > div {
+    padding: 10px;
+    width: 700px;
+    float: left;
+}
+#iris > div > .titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.target{
+    background-color: orange;
+}
+.enlace{
+    background-color:yellow;
+}
+#atributos{
+    background-color: rgb(107, 240, 107);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: start;
+    align-content: stretch;
+}
+#atributos > div {
+    padding: 10px;
+    width: 700px;
+    float: left;
+}
+#atributos > div > .titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+#letras{
+    background-color: rgb(130, 240, 130);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: start;
+    align-content: stretch;
+}
+#letras > div {
+    padding: 10px;
+    width: 700px;
+    float: left;
+}
+#letras > div > .titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+#letras > div > .texto {
+    margin: 10px;
+    text-align: justify;
+    padding: 7px;
+    font-size: 17px;
+}
+#letras > div > .texto:lang(it) {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    color:crimson;
+}
+#letras > div > .texto:lang(es) {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    color:darkslateblue;
+}
+#letras > div > .texto:lang(fr) {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:x-small;
+    color:darkred;
+}
+#letras > div > ul > li:first-child {
+    font-size: small;
+    background-color:rgb(163, 6, 37);
+}
+#letras > div > ul > li:last-child {
+    font-size: xx-large;
+    background-color:rgb(121, 163, 6);
+}
+#letras > div > ul > li:nth-child(3) {
+    font-size: medium;
+    color:rgb(74, 6, 163);
+}
+#letras > div > ul > li:nth-child(5)::first-letter {
+    font-size: x-large;
+    color:rgb(74, 6, 163);
+}
+#efectos > div > .texto::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #efectos > div > p:nth-child(2)::first-line {
+      font-style:italic;
+  }
+  #efectos > div > .texto::after { 
+    content: " .";
+  }
+  
