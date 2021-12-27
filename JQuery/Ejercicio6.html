@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>></script>
+    <script>
+          $(document).ready(function (event) {
+            $('#notas').focus(function () {
+                $("#notas").css("color", "red");
+            });
+            $('#notas').blur(function () {
+                $("#notas").css("color", "green");
+            });
+            for (let i = 1; i < 6; i++) {
+                $('#notas'+i).focus(function () {
+                $("#notas"+i).css("color", "red");
+            });
+            $('#notas'+i).blur(function () {
+                $("#notas"+i).css("color", "green");
+            });
+            }
+        });
+    </script>
+    <style>
+        input{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio 6</h1>
+    <form>
+        Despliegue de aplicaciones web <input id="notas" type="number" value="8" ><br>
+        Desarrollo web entorno cliente <input id="notas1" type="number" value="8" ><br>
+        Desarrollo web entorno servidor <input id="notas2" type="number" value="8" ><br>
+        Diseño de interfaces web <input id="notas3" type="number" value="8" ><br>
+        Inglés <input id="notas4" type="number" value="8" ><br>
+        Empresa e iniciativa emprendedora <input id="notas5" type="number" value="8" >
+    </form>
+</body>
+</html>

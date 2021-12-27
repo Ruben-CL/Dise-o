@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function (event) {
+            $("#uno").click(function () {
+                $("#uno").hide(5000);
+                $("#uno").show(3000);
+                $("#uno").hide(200);
+                $("#uno").show(2000, function () {
+                    alert("He tardado dos segundos en mostrarme");
+                });
+            });
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <h1>Ejercicio 1</h1>
+    <button id="uno"><a href="">Rubén</a></button>
+   
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>></script>
+    <script>
+          $(document).ready(function (event) {
+            $('input.manOne').change(function () {
+                if ($(this).is(":checked")) {
+                    $('tr.manOne').hide();
+                    return;
+                }
+                $('tr.manOne').show();
+            });
+            $('#distribuidor input').change(function () {
+                var cls = $(this).attr("class");
+                if ($(this).is(":checked")) {
+                    $('tr.' + cls).hide();
+                    return;
+                }
+                $('tr.' + cls).show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Ejercicio 4</h1>
+    <p>Form:</p>
+    <p>Check 1: <input class="manOne" type="checkbox"></p>
+    <p>Example Table 1:</p>
+    <table style="border-collapse: collapse;">
+        <tr class="manOne" style="border: 1px;">
+            <td style="border: 1px solid black;">Manufacturer row One here</td>
+
+        </tr>
+        <tr style="border: 1px solid; ">
+            <td style="border: 1px solid black;">Manufacturer row two here</td>
+        </tr>
+
+    </table>
+    <p>Form:</p>
+    <form id="distribuidor">
+        Check 1: <input class="manOne1" type="checkbox"><br>
+        Check 2: <input class="manTwo" type="checkbox"><br>
+        Check 3: <input class="manThree" type="checkbox">
+    </form>
+
+    <p>Example Table 2:</p>
+    <table style="border-collapse: collapse;">
+        <tr class="manOne1" style="border: 1px;">
+            <td style="border: 1px solid black;">Manufacturer row One here</td>
+
+        </tr>
+        <tr class="manTwo" style="border: 1px solid; ">
+            <td style="border: 1px solid black;">Manufacturer row two here</td>
+        </tr>
+        <tr class="manThree" style="border: 1px solid; ">
+            <td style="border: 1px solid black;">Manufacturer row three here</td>
+        </tr>
+    </table> 
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>></script>
+    <script>
+          $(document).ready(function (event) {
+            $('#lista input').change(function () {
+                var cls = $(this).attr("class");
+                if ($(this).is(":checked")) {
+                    $('tr.' + cls).hide();
+                    return;
+                }
+                $('tr.' + cls).show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Ejercicio 5</h1>
+    <form id="lista">
+        Mayor de edad: <input class="mayor" type="checkbox"><br>
+        Socio: <input class="socio" type="checkbox"><br>
+        Tarjeta regalo: <input class="regalo" type="checkbox">
+    </form>
+
+    <table style="border-collapse: collapse;">
+        <tr class="mayor" style="border: 1px;">
+            <td style="border: 1px solid black;">1. Debe ir acompañado de un adulto</td>
+
+        </tr>
+        <tr class="socio" style="border: 1px solid; ">
+            <td style="border: 1px solid black;">2. No puede traer invitados</td>
+        </tr>
+        <tr class="regalo" style="border: 1px solid; ">
+            <td style="border: 1px solid black;">3. Abonará 5% de tasas</td>
+        </tr>
+    </table>
+</body>
+</html>
