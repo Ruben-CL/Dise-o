@@ -1,0 +1,352 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../Fuente/Montserrat-Regular.ttf") format("opentype"), url("../Fuente/Montserrat-Regular.ttf") format("truetype");
+}
+h1 {
+  text-align: right;
+  font-family: "Montserrat";
+  font-size: 40px;
+  padding-right: 20px;
+  text-shadow: 2px 2px;
+}
+
+.indice {
+  float: left;
+}
+
+.indice li {
+  display: inline-block;
+}
+
+.indice li a {
+  text-align: center;
+  background-color: #8BB0D3;
+  color: #000000;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+}
+
+.indice li a:hover {
+  background-color: #0aa167;
+}
+
+.indice li ul {
+  display: none;
+  position: absolute;
+  min-width: 80px;
+}
+
+.indice li:hover > ul {
+  display: block;
+}
+
+#menu {
+  float: left;
+  background-image: url(".././Imagenes/codigo.jpg");
+  font-family: Optima, sans-serif;
+  opacity: 70%;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  border-radius: 25px;
+  border: 1px solid;
+  border-color: #1B3280;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  background-color: white;
+}
+
+header {
+  background-image: url(".././Imagenes/codigo.jpg");
+  text-align: center;
+  color: white;
+  margin-left: 20px;
+  font-family: Optima, sans-serif;
+}
+
+footer {
+  background-image: url(".././Imagenes/codigo.jpg");
+  margin-left: 20px;
+  font-family: Optima, sans-serif;
+}
+
+address {
+  width: 300px;
+  float: left;
+  font-size: 12px;
+  color: white;
+}
+
+.correo {
+  color: white;
+}
+
+footer > p {
+  text-align: right;
+  font-size: 12px;
+  color: white;
+}
+
+main {
+  margin-left: 10px;
+  font-family: Optima, sans-serif;
+  text-align: justify;
+}
+
+.vermas {
+  text-align: left;
+}
+
+aside {
+  text-align: center;
+  background-image: url(".././Imagenes/codigo.jpg");
+  /*margin-left: 20px;*/
+  font-family: Optima, sans-serif;
+}
+
+.titulo {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
+.texto::first-letter {
+  font-size: xx-large;
+  font-family: Optima, sans-serif;
+}
+
+.item4 {
+  padding: 10px;
+  margin-left: 20px;
+  font-family: Optima, sans-serif;
+}
+
+.item5 {
+  padding: 10px;
+  margin-left: 20px;
+  font-family: Optima, sans-serif;
+}
+
+.item6 {
+  padding: 10px;
+  margin-left: 20px;
+  font-family: Optima, sans-serif;
+}
+
+.item5 {
+  text-align: center;
+}
+
+:target {
+  background-color: #93939D;
+  padding: 20px;
+  text-align: center;
+}
+
+.tooltiptitulo {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
+.tooltiptitulo .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltiptitulo .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltiptitulo:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.curriculum {
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #8BB0D3;
+  border: 1px solid;
+  border-color: #1B3280;
+  opacity: 70%;
+}
+
+.linkedin {
+  width: 50px;
+  max-width: 100px;
+  opacity: 70%;
+}
+
+@media all and (min-width: 1024px) {
+  .item1 {
+    grid-area: header;
+  }
+
+  .grid-main {
+    grid-area: main;
+  }
+
+  .item3 {
+    grid-area: footer;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas: "header header header header header header" "main main main main main main" "footer footer footer footer footer footer";
+    grid-gap: 10px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .item4 {
+    grid-area: cabeceramain;
+  }
+
+  .item5 {
+    grid-area: articulo1;
+  }
+
+  .item6 {
+    grid-area: articulo2;
+  }
+
+  .item7 {
+    grid-area: aside;
+  }
+
+  .grid-main {
+    display: grid;
+    grid-template-areas: "aside aside cabeceramain cabeceramain cabeceramain cabeceramain" "aside aside articulo1 articulo1 articulo2 articulo2";
+    grid-gap: 10px;
+    background-color: white;
+    padding-left: 10px;
+  }
+}
+@media all and (min-width: 320px) {
+  .item1 {
+    grid-area: header;
+  }
+
+  .grid-main {
+    grid-area: main;
+  }
+
+  .item3 {
+    grid-area: footer;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas: "header header header header header header" "main main main main main main" "footer footer footer footer footer footer";
+    grid-gap: 10px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .item4 {
+    grid-area: cabeceramain;
+  }
+
+  .item5 {
+    grid-area: articulo1;
+  }
+
+  .item6 {
+    grid-area: articulo2;
+  }
+
+  .item7 {
+    grid-area: aside;
+  }
+
+  .grid-main {
+    display: grid;
+    grid-template-areas: "aside aside aside aside aside aside" "cabeceramain cabeceramain cabeceramain cabeceramain cabeceramain cabeceramain" "articulo1 articulo1 articulo1 articulo1 articulo1 articulo1" "articulo2 articulo2 articulo2 articulo2 articulo2 articulo2";
+    grid-gap: 10px;
+    background-color: white;
+    padding-left: 10px;
+  }
+}
+@media all and (min-width: 768px) {
+  .item1 {
+    grid-area: header;
+  }
+
+  .grid-main {
+    grid-area: main;
+  }
+
+  .item3 {
+    grid-area: footer;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas: "header header header header header header" "main main main main main main" "footer footer footer footer footer footer";
+    grid-gap: 10px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .item4 {
+    grid-area: cabeceramain;
+  }
+
+  .item5 {
+    grid-area: articulo1;
+  }
+
+  .item6 {
+    grid-area: articulo2;
+  }
+
+  .item7 {
+    grid-area: aside;
+  }
+
+  .grid-main {
+    display: grid;
+    grid-template-areas: "aside aside cabeceramain cabeceramain cabeceramain cabeceramain" "aside aside articulo1 articulo1 articulo2 articulo2";
+    grid-gap: 10px;
+    background-color: white;
+    padding-left: 10px;
+  }
+}/*# sourceMappingURL=css.css.map */

@@ -1,0 +1,128 @@
+@media all and (min-width: 1024px) {
+  .item1 {
+    grid-area: header;
+  }
+
+  .grid-main {
+    grid-area: main;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas: "header header header header header header" "main main main main main main";
+    grid-gap: 10px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .item4 {
+    grid-area: cabeceramain;
+  }
+
+  .grid-main {
+    display: grid;
+    grid-template-areas: "cabeceramain cabeceramain cabeceramain cabeceramain cabeceramain cabeceramain";
+    grid-gap: 10px;
+    background-color: white;
+  }
+}
+@media all and (min-width: 320px) {
+  .item1 {
+    grid-area: header;
+  }
+
+  .grid-main {
+    grid-area: main;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas: "header header header header header header" "main main main main main main";
+    grid-gap: 10px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .item4 {
+    grid-area: cabeceramain;
+  }
+
+  .grid-main {
+    display: grid;
+    grid-template-areas: "cabeceramain cabeceramain cabeceramain cabeceramain cabeceramain cabeceramain";
+    grid-gap: 10px;
+    background-color: white;
+  }
+}
+@media all and (min-width: 768px) {
+  .item1 {
+    grid-area: header;
+  }
+
+  .grid.main {
+    grid-area: main;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-areas: "header header header header header header" "main main main main main main";
+    grid-gap: 10px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .item4 {
+    grid-area: cabeceramain;
+  }
+
+  .grid-main {
+    display: grid;
+    grid-template-areas: "cabeceramain cabeceramain cabeceramain cabeceramain cabeceramain cabeceramain";
+    grid-gap: 10px;
+    background-color: white;
+  }
+}
+.folio1 {
+  width: 8em;
+  height: 10em;
+  margin: 20px;
+}
+
+.folio2 {
+  width: 8em;
+  height: 10em;
+  margin: 20px;
+}
+
+.folio3 {
+  width: 8em;
+  height: 10em;
+  margin: 20px;
+}
+
+.folio4 {
+  width: 8em;
+  height: 10em;
+  margin: 20px;
+}
+
+.folio5 {
+  width: 8em;
+  height: 10em;
+  margin: 20px;
+}
+
+.folio6 {
+  width: 8em;
+  height: 10em;
+  margin: 20px;
+}
+
+.folio7 {
+  width: 8em;
+  height: 10em;
+  margin: 20px;
+}/*# sourceMappingURL=css2.css.map */
